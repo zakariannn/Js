@@ -1,16 +1,16 @@
 function combinations(arr, n, r, index, data, i)
 {
+    let res = "[ ";
     if (index == r)
     {
         for (let j = 0; j < r; j++)
         {
-            if(j == 0)
-            console.log("[")
-            console.log((data[j] + " "));
-            if(j == r - 1)
-            console.log("]")
-        }    
-        console.log("");
+            res = res + data[j] + " ";
+        }  
+
+        res += "]"
+        console.log(res); 
+        console.log(" ");
           
         return;
     }
